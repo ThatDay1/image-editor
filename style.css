@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --bg-color: #1b263b;
+    --cont-bg-color: #415a77;
+    --light-white: #efefef;
+    --label-color: #06d6a0;
+    --white: #fff;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+}
+
+.container {
+    width: 90vw;
+    padding: 50px 30px;
+    background-color: var(--cont-bg-color);
+    border-radius: 10px;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+}
+
+.editor {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.editor label {
+    font-size: 1.25rem;
+    color: var(--light-white);
+    font-weight: 400;
+}
+
+.editor input[type="range"] {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin-top: 5px;
+}
+
+.flip-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.flip-buttons .flip-option {
+    margin-top: 10px;
+}
+
+.result {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.result img {
+    display: block;
+    position: relative;
+    max-width: 100%;
+    max-height: 350px;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+}
+
+.image-container {
+    display: none;
+}
+
+input[type = "file"] {
+    display: none;
+}
+
+.result label {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 220px;
+    background-color: var(--label-color);
+    color: var(--white);
+    text-align: center;
+    padding: 16px 0;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    cursor: pointer;
+}
